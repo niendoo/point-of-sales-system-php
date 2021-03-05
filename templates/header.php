@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<!--
+This is a starter template page. Use this page to start your new project from
+scratch. This page gets rid of all links and provides the needed markup only.
+-->
+<html>
+
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Niendoo Tech POS | Dashboard</title>
+	<!-- Tell the browser to be responsive to screen width -->
+	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+	<!-- Ionicons -->
+	<link rel="stylesheet" href="bower_components/Ionicons/css/ionicons.min.css">
+	<!-- Theme style -->
+	<link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+	<!-- AdminLTE Skins. We have chosen the skin-blue for this starter
+		page. However, you can choose any other skin. Make sure you
+		apply the skin class to the body tag so the changes take effect. -->
+	<link rel="stylesheet" href="dist/css/skins/skin-blue.min.css">
+	<!-- DataTables -->
+	<link rel="stylesheet" href="bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css">
+	<!-- daterange picker -->
+	<link rel="stylesheet" href="bower_components/bootstrap-daterangepicker/daterangepicker.css">
+	<!-- bootstrap datepicker -->
+	<link rel="stylesheet" href="bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
+	<!-- iCheck for checkboxes and radio inputs -->
+	<link rel="stylesheet" href="plugins/iCheck/all.css">
+	<!-- Select2 -->
+	<link rel="stylesheet" href="bower_components/select2/dist/css/select2.min.css">
+	<!-- Chart.js -->
+	<link rel="stylesheet" href="plugins/chart.js/chart.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css" integrity="sha512-/zs32ZEJh+/EO2N1b0PEdoA10JkdC3zJ8L5FTiQu82LR9S/rOQNfQN7U59U9BC12swNeRAz3HSzIL2vpp4fv3w==" crossorigin="anonymous" />
+
+
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+	<!-- REQUIRED JS SCRIPTS -->
+
+	<!-- jQuery 3 -->
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="plugins/jquery/jquery.js"></script>
+	<!-- Bootstrap 3.3.7 -->
+	<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+	<!-- AdminLTE App -->
+	<script src="dist/js/adminlte.min.js"></script>
+	<!--Sweetalerts-->
+	<script src="plugins/sweetalerts/sweetalerts.js"></script>
+	<!--Chart.js-->
+	<script src="plugins/chart.js/chart.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js" integrity="sha512-s+xg36jbIujB2S2VKfpGmlC3T5V2TF3lY48DX7u2r9XzGzgPsa6wTpOQA7J9iffvdeBN0q9tKzRxVxw1JviZPg==" crossorigin="anonymous"></script>
+	<!-- iCheck 1.0.1 -->
+	<script src="plugins/iCheck/icheck.min.js"></script>
+	<!-- DataTables -->
+	<script src="bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+	<script src="bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+	<!-- date-range-picker -->
+	<script src="bower_components/moment/min/moment.min.js"></script>
+	<script src="bower_components/bootstrap-daterangepicker/daterangepicker.js"></script>
+	<!-- bootstrap datepicker -->
+	<script src="bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+	<!-- Select2 -->
+	<script src="bower_components/select2/dist/js/select2.full.min.js"></script>
+	<!-- End Script-->
+	<!-- Google Font -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+</head>
+<!--
+BODY TAG OPTIONS:
+=================
+Apply one or more of the following classes to get the
+desired effect
+|---------------------------------------------------------|
+| SKINS         | skin-blue                               |
+|               | skin-black                              |
+|               | skin-purple                             |
+|               | skin-yellow                             |
+|               | skin-red                                |
+|               | skin-green                              |
+|---------------------------------------------------------|
+|LAYOUT OPTIONS | fixed                                   |
+|               | layout-boxed                            |
+|               | layout-top-nav                          |
+|               | sidebar-collapse                        |
+|               | sidebar-mini                            |
+|---------------------------------------------------------|
+-->
+
+<body class="hold-transition skin-blue sidebar-mini">
+	<div class="wrapper">
+
+		<!-- Main Header -->
+		<header class="main-header">
+
+			<!-- Logo -->
+			<a href="dashboard.php" class="logo">
+				<!-- mini logo for sidebar mini 50x50 pixels -->
+				<span class="logo-mini"><b>N</b>POS</span>
+				<!-- logo for regular state and mobile devices -->
+				<span class="logo-lg"><b>N-TECH </b>POS</span>
+			</a>
+
+			<!-- Header Navbar -->
+			<nav class="navbar navbar-static-top" role="navigation">
+				<!-- Sidebar toggle button-->
+				<a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+					<span class="sr-only">Toggle navigation</span>
+				</a>
+				<!-- Navbar Right Menu -->
+				<div class="navbar-custom-menu">
+					<ul class="nav navbar-nav">
+
+						<!-- User Account Menu -->
+						<li class="dropdown user user-menu">
+							<!-- Menu Toggle Button -->
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+								<!-- The user image in the navbar-->
+								<img src="dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
+								<!-- hidden-xs hides the username on small devices so only the image appears. -->
+								<span class="hidden-xs"><?php echo $_SESSION['username']; ?></span>
+							</a>
+							<ul class="dropdown-menu">
+								<!-- The user image in the menu -->
+								<li class="user-header">
+									<img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+
+									<p>
+										<?php echo 'Welcome'.' '.$_SESSION['username'];?>
+										<small><?php $currentDateTime = date('Y-m-d'); echo 'Today\'s Date: '.$currentDateTime;?></small>
+
+										<small><?php $currentDateTime = date('H:i:s'); echo 'Time: '.$currentDateTime;?></small>
+									</p>
+								</li>
+								<!-- Menu Body -->
+								<li class="user-body">
+									<div class="row">
+
+										<!--
+										<div class="col-xs-4 text-center">
+											<a href="#">Sales</a>
+										</div>
+-->
+
+									</div>
+									<!-- /.row -->
+								</li>
+								<!-- Menu Footer-->
+								<li class="user-footer">
+									<div class="pull-left">
+										<a href="changepassword.php" class="btn btn-default btn-flat">Change Password</a>
+									</div>
+									<div class="pull-right">
+										<a href="logout.php" class="btn btn-default btn-flat">Sign out</a>
+									</div>
+								</li>
+							</ul>
+						</li>
+						<!-- Control Sidebar Toggle Button -->
+						<!--
+
+-->
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<!-- Left side column. contains the logo and sidebar -->
+		<aside class="main-sidebar">
+
+			<!-- sidebar: style can be found in sidebar.less -->
+			<section class="sidebar">
+
+				<!-- Sidebar user panel (optional) -->
+				<div class="user-panel">
+					<div class="pull-left image">
+						<img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+					</div>
+					<div class="pull-left info">
+						<p><?php echo $_SESSION['username'];?></p>
+						<!-- Status -->
+						<a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+					</div>
+				</div>
+
+				<!-- Sidebar Menu -->
+				<ul class="sidebar-menu" data-widget="tree">
+					<li class="header">Admin Dashoboard</li>
+					<!-- Optionally, you can add icons to the links -->
+					<li class="active"><a href="dashboard.php"><i class="fa fa-tachometer"></i> <span>Dashboard</span></a></li>
+					<li><a href="category.php"><i class="fa fa-list"></i> <span>Categories</span></a></li>
+					<li><a href="expenses.php"><i class="fa fa-list"></i> <span>Expenses</span></a></li>
+					<li><a href="suppliers.php"><i class="fa fa-list"></i> <span>Suppliers</span></a></li>
+					<li class="treeview">
+						<a href="#"><i class="fa fa-product-hunt"></i> <span>Products</span>
+							<span class="pull-right-container">
+								<i class="fa fa-angle-left pull-right"></i>
+							</span>
+						</a>
+						<ul class="treeview-menu">
+							<li><a href="addproduct.php"><i class="fa fa-plus"></i> <span>Add Product</span></a></li>
+							<li><a href="productlist.php"><i class="fa fa-th-list"></i> <span>Product List</span></a></li>
+						</ul>
+					</li>
+					<li class="treeview">
+						<a href="#"><i class="fa fa-first-order"></i> <span>Orders</span>
+							<span class="pull-right-container">
+								<i class="fa fa-angle-left pull-right"></i>
+							</span>
+						</a>
+						<ul class="treeview-menu">
+						<li><a href="createorder.php"><i class="fa fa-cart-plus"></i> <span>Create Order</span></a></li>
+							<li><a href="orderlist.php"><i class="fa fa-th-list"></i> <span>Order List</span></a></li>
+						</ul>
+					</li>
+					<li class="treeview">
+          <a href="#">
+            <i class="fa fa-table"></i> <span>Sales Report</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="tablereport.php"><i class="fa fa-circle-o"></i>Tabular Report</a></li>
+            <li><a href="graphreport.php"><i class="fa fa-circle-o"></i> Graph Report</a></li>
+          </ul>
+        </li>
+					<li class="treeview">
+						<a href="#"><i class="fa fa-gear"></i> <span>Settings</span>
+							<span class="pull-right-container">
+								<i class="fa fa-angle-left pull-right"></i>
+							</span>
+						</a>
+						<ul class="treeview-menu">
+							<li><a href="registration.php"><i class="fa fa-registered"></i> User Registration </a></li>
+							<li><a href="changepassword.php"><i class="fa fa-unlock"></i>Change Password</a></li>
+							<li><a href="logout.php"> <i class="fa fa-sign-out"></i>Log Out</a></li>
+						</ul>
+					</li>
+				</ul>
+				<!-- /.sidebar-menu -->
+			</section>
+			<!-- /.sidebar -->
+		</aside>
