@@ -1,1 +1,1 @@
-# point-of-sales-system-php
+# point of sales system php
